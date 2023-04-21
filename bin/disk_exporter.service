@@ -1,0 +1,7 @@
+[Unit]
+Description=disk-exporter
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/python3.8 /opt/disk-exporter/disk_exporter.py
+[Install]
+WantedBy=multi-user.target
